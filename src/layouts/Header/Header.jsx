@@ -52,7 +52,7 @@ export default (props) => {
           </ul>
         </nav>
         <Soc1als className="header__soc1als" />
-        <BurgerButton className="header__burger-button" />
+        <BurgerButton className="header__burger-button visible-mobile" />
       </div>
     </header>
   )
