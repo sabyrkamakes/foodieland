@@ -1,0 +1,39 @@
+.header {
+  padding-block: 40px;
+  border-bottom: var(--border);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 60px;
+    }
+
+    &-link {
+      position: relative;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: var(--color-dark);
+
+      &::after {
+        @include abs-center;
+
+        content: '';
+        width: calc(100% + 24px);
+        height: 48px;
+      }
+
+      &.is-active {
+        color: var(--color-accent);
+        pointer-events: none;
+      }
+    }
+  }
+}
