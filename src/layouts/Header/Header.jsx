@@ -1,8 +1,8 @@
 import './Header.scss'
+import clsx from 'clsx'
 import Logo from '@/components/Logo'
 import Soc1als from '@/components/Soc1als'
 import BurgerButton from '@/components/BurgerButton'
-import clsx from 'clsx'
 
 export default (props) => {
   const { url } = props
