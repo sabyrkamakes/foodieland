@@ -1,15 +1,17 @@
 .button {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.3em;
-  padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  border: var(--border);
-  border-radius: var(--border-radius-m);
+  justify-content: center;
+  column-gap: 15px;
+  min-width: 200px;
+  height: var(--button-height);
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: var(--border-radius-xxxs);
 
   @include hover {
-    color: var(--color-white);
+    color: var(--color-light);
     background-color: var(--color-accent);
   }
 }
