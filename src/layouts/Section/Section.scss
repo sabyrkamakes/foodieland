@@ -1,7 +1,7 @@
 .section {
   display: grid;
-  row-gap: fluid(80, 40);
-  padding-block: 50px;
+  row-gap: var(--section-padding-y);
+  padding-block: var(--section-padding-y);
 
   &__header {
     display: flex;
@@ -9,10 +9,16 @@
     align-items: center;
     column-gap: 16px;
 
+    &:has(.section__link) &__header {
+      @include mobile {
+        display: contents;
+      }
+    }
+  }
+
+  &__link {
     @include mobile {
-      flex-direction: column;
-      align-items: start;
-      row-gap: 20px;
+      order: 1;
     }
   }
 }
