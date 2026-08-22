@@ -1,0 +1,53 @@
+.slider-card {
+  position: relative;
+  display: flex;
+  min-height: 640px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--color-cyan);
+  }
+
+  &__category {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 50px);
+  }
+}
