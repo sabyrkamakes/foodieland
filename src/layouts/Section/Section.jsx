@@ -20,7 +20,7 @@ export default (props) => {
           </div>
         )}
         {linkLabel && (
-          <Button href="/" mode="cyan">
+          <Button className="section__link" href="/" mode="cyan">
             {linkLabel}
           </Button>
         )}
