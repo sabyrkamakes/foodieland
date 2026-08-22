@@ -5,10 +5,19 @@
   column-gap: 15px;
   min-width: 200px;
   height: var(--button-height);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.02em;
   color: var(--color-light);
   background-color: var(--color-dark);
   border: none;
   border-radius: var(--border-radius-xxxs);
+
+  &--cyan {
+    font-size: 16px;
+    color: var(--color-dark);
+    background-color: var(--color-cyan);
+  }
 
   @include hover {
     color: var(--color-light);
