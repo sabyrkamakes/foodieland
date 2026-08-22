@@ -40,22 +40,22 @@ h6, .h6 {
 
 h1,
 .h1 {
-  @include fluid-text(64, 28);
+  @include fluid-text(64, 36);
 }
 
 h2,
 .h2 {
-  @include fluid-text(48, 24);
+  @include fluid-text(48, 32);
 }
 
 h3,
 .h3 {
-  @include fluid-text(36, 20);
+  @include fluid-text(36, 24);
 }
 
 h4,
 .h4 {
-  @include fluid-text(24, 18);
+  @include fluid-text(24, 20);
 }
 
 h5,
