@@ -31,10 +31,10 @@ export default (props) => {
   ]
 
   return (
-    <header className="header">
+    <header className="header" data-js-mobile-menu="">
       <div className="header__inner container">
         <Logo className="header__logo" />
-        <nav className="header__menu">
+        <nav className="header__menu" data-js-mobile-menu-overlay="">
           <ul className="header__menu-list">
             {menuItems.map(({ label, href }) => (
               <li className="header__menu-item" key={label}>
@@ -52,7 +52,10 @@ export default (props) => {
           </ul>
         </nav>
         <Soc1als className="header__soc1als" />
-        <BurgerButton className="header__burger-button visible-mobile" />
+        <BurgerButton
+          className="header__burger-button visible-mobile"
+          extraAttrs={{ 'data-js-mobile-menu-burger-button': '' }}
+        />
       </div>
     </header>
   )
