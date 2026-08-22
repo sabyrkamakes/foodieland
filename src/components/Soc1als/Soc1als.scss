@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: fluid(40, 20);
     color: var(--color-dark);
   }
 
@@ -11,6 +11,8 @@
   }
 
   &__link {
+    @include square(22px);
+
     position: relative;
 
     &::after {
