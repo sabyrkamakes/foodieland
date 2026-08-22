@@ -1,18 +1,46 @@
 .header {
-  padding-block: 40px;
+  padding-block: fluid(40, 10);
   border-bottom: var(--border);
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
   }
 
   &__menu {
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      z-index: var(--layer-mobile-menu);
+      background-color: var(--color-light);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include mobile {
+          @include hide;
+        }
+      }
+    }
+
     &-list {
       display: flex;
       align-items: center;
-      column-gap: 60px;
+      column-gap: fluid(60, 20);
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+        height: 100dvh;
+        padding-block: 30px;
+        overflow-y: auto;
+      }
     }
 
     &-link {
@@ -34,6 +62,18 @@
         color: var(--color-accent);
         pointer-events: none;
       }
+    }
+  }
+
+  &__soc1als {
+    @include mobile {
+      margin-left: auto;
+    }
+  }
+
+  &__burger-button {
+    @include mobile {
+      z-index: var(--layer-mobile-menu);
     }
   }
 }
