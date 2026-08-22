@@ -10,4 +10,18 @@
       --gridColumns: #{$i};
     }
   }
+
+  &--6 {
+    @include tablet-s {
+      --gridColumns: 3;
+    }
+
+    @include mobile {
+      --gridColumns: 2;
+    }
+
+    @include mobile-s {
+      --gridColumns: 1;
+    }
+  }
 }
