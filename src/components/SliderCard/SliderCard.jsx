@@ -19,7 +19,7 @@ export default (props) => {
               {slide.category.label}
             </span>
           </div>
-          <h1 className="slider-card__title">{slide.title}</h1>
+          <h2 className="slider-card__title h1">{slide.title}</h2>
           <div className="slider-card__description">
             <p>{slide.description}</p>
           </div>
@@ -27,7 +27,7 @@ export default (props) => {
         </div>
         <div className="slider-card__footer">
           <AuthorCard author={slide.author} />
-          <Button href="/">
+          <Button className="slider-card__button" href="/">
             <span>View Recipes</span>
             <Icon name="play" hasFill />
           </Button>
