@@ -19,6 +19,10 @@
     background-color: var(--color-cyan);
   }
 
+  &--medium {
+    min-width: 180px;
+  }
+
   @include hover {
     color: var(--color-light);
     background-color: var(--color-accent);
