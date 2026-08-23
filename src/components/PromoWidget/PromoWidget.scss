@@ -1,0 +1,16 @@
+.promo-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-block: 40px 32px;
+  background: url('@/assets/images/promo-widget/bg-star.svg') center no-repeat, linear-gradient(180deg, #357355 0%, #1d483b 100%);
+
+  &__link {
+    color: var(--color-light-60);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+  }
+}
