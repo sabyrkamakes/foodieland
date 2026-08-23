@@ -1,4 +1,15 @@
 .tags {
+  &--transparent {
+    .tags__list {
+      column-gap: 24px;
+    }
+
+    .tags__item {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -16,6 +27,9 @@
   }
 
   &__label {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
     color: var(--color-dark-60);
   }
 }
