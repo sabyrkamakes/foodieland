@@ -9,6 +9,11 @@
     align-items: center;
     column-gap: 16px;
 
+    @include mobile {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
     &--with-action {
       @include mobile {
         display: contents;
@@ -18,18 +23,27 @@
     &--vertical {
       flex-direction: column;
       row-gap: 24px;
+
+      & > .section__description {
+        text-align: center;
+      }
     }
   }
-  
+
   &__title {
-    @include mobile {
+    max-width: 750px;
+
+    @include tablet-s {
       text-align: center;
     }
   }
 
   &__description {
-    max-width: 700px;
-    text-align: center;
+    max-width: 650px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__link {
