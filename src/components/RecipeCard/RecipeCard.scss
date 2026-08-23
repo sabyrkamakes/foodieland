@@ -1,0 +1,44 @@
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  height: 100%;
+  padding-block: 16px 32px;
+  background-image: var(--gradient);
+  border-radius: var(--border-radius);
+
+  &__image-wrapper {
+    position: relative;
+    padding-inline: 16px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: var(--border-radius-xxs);
+  }
+
+  &__favorite-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    padding: 12px;
+    background-color: var(--color-light);
+    border: none;
+    border-radius: 50%;
+  }
+
+  &__favorite {
+    &.is-favorite {
+      filter: drop-shadow(0 5px 10px rgb(255 99 99 / 0.2));
+    }
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 24px;
+    padding-inline: 24px;
+  }
+}
