@@ -7,6 +7,27 @@
   background-image: var(--gradient);
   border-radius: var(--border-radius);
 
+  &--alt {
+    row-gap: 16px;
+    padding: 0;
+    background-image: none;
+
+    .recipe-card {
+      &__image-wrapper {
+        padding-inline: 0;
+      }
+
+      &__favorite-wrapper {
+        top: 16px;
+        right: 16px;
+      }
+
+      &__body {
+        padding-inline: 0;
+      }
+    }
+  }
+
   &__image-wrapper {
     position: relative;
     padding-inline: 16px;
