@@ -4,7 +4,7 @@ import Recipes from '@/sections/Recipes'
 import LearnMore from '@/sections/LearnMore'
 import InstagramView from '@/sections/InstagramView'
 import DailyRecipes from '@/sections/DailyRecipes'
-import SubscribeForm from '@/sections/SubscribeForm'
+import SubscribeForm from '@/sections/SubscribeBanner'
 
 export const metadata = {
   title: 'Home',
