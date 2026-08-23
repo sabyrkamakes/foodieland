@@ -1,0 +1,45 @@
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 44px;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
+  &__body {
+    max-width: 520px;
+
+    @include mobile {
+      max-width: 400px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 72px;
+
+      @include tablet {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__image {
+    @include tablet-s {
+      max-width: 50%;
+    }
+
+    @include mobile {
+      max-width: 90%;
+    }
+  }
+}
