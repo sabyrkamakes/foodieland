@@ -20,6 +20,12 @@
       row-gap: 24px;
     }
   }
+  
+  &__title {
+    @include mobile {
+      text-align: center;
+    }
+  }
 
   &__description {
     max-width: 700px;
