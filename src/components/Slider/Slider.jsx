@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import SliderCard from '@/components/SliderCard'
 import scrollImage from '@/assets/images/scroll.png'
 import authorImage from '@/assets/images/author.png'
-import slideBgImage from '@/assets/images/slide-bg.jpg'
+import slideBgImage from '@/assets/images/backgrounds/slide-bg.jpg'
 import badgeImage from '@/assets/images/badge.svg'
 
 export default (props) => {
