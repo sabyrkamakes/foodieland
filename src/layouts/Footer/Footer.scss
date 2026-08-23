@@ -62,14 +62,14 @@
   }
 
   &__copyright {
-    @include mobile-above {
-      @include abs-center;
-    }
-
     font-weight: 500;
     font-size: 18px;
     letter-spacing: -0.02em;
     color: var(--color-dark-60);
+
+    @include mobile-above {
+      @include abs-center;
+    }
 
     &-link {
       color: var(--color-accent);
