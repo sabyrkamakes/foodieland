@@ -47,6 +47,7 @@ export default () => {
       title="Categories"
       titleId="categories-title"
       linkLabel="View All Categories"
+      mode="with-action"
     >
       <Grid columns="6">
         {categories.map((category) => (
