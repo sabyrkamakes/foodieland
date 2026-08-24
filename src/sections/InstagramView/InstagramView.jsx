@@ -1,5 +1,4 @@
 import './InstagramView.scss'
-import { Image } from 'minista'
 import Section from '@/layouts/Section'
 import Grid from '@/layouts/Grid'
 import Button from '@/components/Button'
@@ -18,7 +17,14 @@ export default () => {
         <div className="instagram-view__body">
           <Grid columns={4}>
             {instagramPosts.map((postImage, index) => (
-              <Image src={postImage} key={index} />
+              <img
+                src={postImage}
+                key={index}
+                alt=""
+                width={290}
+                height={446}
+                loading="lazy"
+              />
             ))}
           </Grid>
           <Button href="/" mode="large">
