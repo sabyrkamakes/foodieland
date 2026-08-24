@@ -1,6 +1,5 @@
 import './SliderCard.scss'
 import clsx from 'clsx'
-import { Image } from 'minista'
 import Icon from '@/components/Icon'
 import Button from '@/components/Button'
 import AuthorCard from '@/components/AuthorCard'
@@ -14,7 +13,13 @@ export default (props) => {
       <div className="slider-card__body">
         <div className="slider-card__info">
           <div className="slider-card__category">
-            <Image src={slide.category.imgSrc} />
+            <img
+              src={slide.category.imgSrc}
+              alt=""
+              width={24}
+              height={24}
+              loading="lazy"
+            />
             <span className="slider-card__category-label">
               {slide.category.label}
             </span>
@@ -33,8 +38,22 @@ export default (props) => {
           </Button>
         </div>
       </div>
-      <Image className="slider-card__image" src={slide.bgImgSrc} />
-      <Image className="slider-card__badge" src={slide.badgeImgSrc} />
+      <img
+        className="slider-card__image"
+        src={slide.bgImgSrc}
+        alt=""
+        width={660}
+        height={640}
+        loading="lazy"
+      />
+      <img
+        className="slider-card__badge"
+        src={slide.badgeImgSrc}
+        alt=""
+        width={150}
+        height={150}
+        loading="lazy"
+      />
     </article>
   )
 }
