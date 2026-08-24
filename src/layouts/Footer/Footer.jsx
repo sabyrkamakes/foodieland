@@ -1,27 +1,9 @@
 import './Footer.scss'
 import Logo from '@/components/Logo'
 import Soc1als from '@/components/Soc1als'
+import { menuItems } from './Footer.data'
 
 export default () => {
-  const menuItems = [
-    {
-      label: 'Recipes',
-      href: '/recipes',
-    },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
-    {
-      label: 'About us',
-      href: '/about',
-    },
-  ]
-
   return (
     <footer className="footer">
       <div className="footer__inner container">
