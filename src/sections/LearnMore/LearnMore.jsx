@@ -1,5 +1,4 @@
 import './LearnMore.scss'
-import { Image } from 'minista'
 import Button from '@/components/Button'
 import bgImage from '@/assets/images/backgrounds/learn-more-bg.png'
 
@@ -23,7 +22,14 @@ export default () => {
           Learn More
         </Button>
       </div>
-      <Image className="learn-more__image" src={bgImage} />
+      <img
+        className="learn-more__image"
+        src={bgImage}
+        alt=""
+        width={710}
+        height={597}
+        loading="lazy"
+      />
     </section>
   )
 }
