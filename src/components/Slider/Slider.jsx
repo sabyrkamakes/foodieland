@@ -1,4 +1,6 @@
 import './Slider.scss'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
 import clsx from 'clsx'
 import SliderCard from '@/components/SliderCard'
 import { sliderConfig, slides } from './Slider.data'
